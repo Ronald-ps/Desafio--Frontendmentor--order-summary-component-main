@@ -1,0 +1,143 @@
+@media screen {
+  /* estilos gerais */
+  * {
+    margin: 0;
+  }
+
+  body {
+    height: 100vh;
+    display: flex;
+    font-family: "Red Hat Display";
+    font-size: 16px;
+    background-color: hsl(225, 100%, 94%);
+  }
+
+  /*  Definindo fonte de parágrafos e botoes*/
+  p,
+  button,
+  a,
+  span {
+    font-size: 1.2rem;
+    color: hsl(224, 23%, 55%);
+  } /* */
+
+  button {
+    border: none;
+  }
+
+  /* //////////////////////////////////////////////////// */
+  /* Div pai */
+  .container {
+    background-color: white;
+    margin: auto;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 27px;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px; /*Retira as quinas das bordas de cimas*/
+    text-align: center;
+  }
+
+  .container > img {
+    width: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+
+  .container h1 {
+    margin: 2ex 0 0 0;
+    font-size: 2rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+  }
+
+  .container > p {
+    margin: 3.333ex 10%;
+    font-weight: 500;
+  }
+
+  /* //////////////////////////////////////// */
+  /* Conteúdo com o preço */
+  .container > div {
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    height: 9ex;
+    margin: auto;
+    width: 90%;
+    border-radius: 18px;
+    background-color: hsl(225, 100%, 98%);
+  }
+
+  /* link "change, img musica e div annual plan */
+  .container > div a,
+  img,
+  div {
+    display: inline-block;
+    margin: auto 0;
+  }
+
+  .container > div img {
+    margin: auto 0;
+  }
+
+  .container > div div {
+    width: 48%;
+  }
+
+  .container > div div > p {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+  }
+
+  .container > div a {
+    text-decoration: underline;
+    color: hsl(245, 75%, 52%);
+  }
+
+  .container > div a:hover {
+    color: hsl(245, 91%, 37%);
+  }
+
+  /* //////////////////////////////// */
+  /* Conteúdo dos botoes inferiores */
+
+  button {
+    display: block;
+    padding: 1.8ex;
+    width: 90%;
+    border-radius: 15px;
+    border: none;
+    font-weight: 900;
+  }
+
+  div button:first-of-type {
+    margin: 3ex auto;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0px 30px 5px hsl(225, 100%, 98%);
+  }
+
+  div button:last-of-type {
+    margin: 0 auto 3ex auto;
+    background-color: white;
+  }
+
+  /* Quando ativado */
+  div button:first-of-type:hover {
+    background-color: hsla(245, 75%, 52%, 0.608);
+  }
+
+  div button:last-of-type:hover {
+    color: hsl(223, 47%, 23%);
+  }
+  /*  */
+}
+
+@media (min-width: 780px) {
+  body {
+    background-image: url("/images/pattern-background-desktop.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
